@@ -67,7 +67,7 @@
             "y": 331,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Phaser Editor 2D\nWebpack + TypeScript",
+            "text": "Phaser Editor v4\nWebpack + TypeScript",
             "align": "center",
             "fontFamily": "caroni",
             "fontSize": "3em",
