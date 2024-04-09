@@ -4,13 +4,13 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnPointerDownScript } from "@phasereditor2d/scripts-core";
-import { PushActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { FadeActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { DurationConfigComp } from "@phasereditor2d/scripts-simple-animations";
-import { MoveInSceneActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { DelayConfigComp } from "@phasereditor2d/scripts-simple-animations";
+import { OnPointerDownScript } from "@phaserjs/editor-scripts-core";
+import { PushActionScript } from "@phaserjs/editor-scripts-simple-animations";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
+import { FadeActionScript } from "@phaserjs/editor-scripts-simple-animations";
+import { DurationConfigComp } from "@phaserjs/editor-scripts-simple-animations";
+import { MoveInSceneActionScript } from "@phaserjs/editor-scripts-simple-animations";
+import { DelayConfigComp } from "@phaserjs/editor-scripts-simple-animations";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -44,7 +44,7 @@ export default class Level extends Phaser.Scene {
 		// text
 		const text = this.add.text(729, 331, "", {});
 		text.setOrigin(0.5, 0.5);
-		text.text = "Phaser Editor 2D\nWebpack + TypeScript";
+		text.text = "Phaser Editor v4\nWebpack + TypeScript";
 		text.setStyle({ "align": "center", "color": "#8ee391ff", "fontFamily": "caroni", "fontSize": "3em" });
 
 		// onAwakeScript_3
