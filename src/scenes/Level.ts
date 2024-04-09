@@ -4,13 +4,13 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnPointerDownScript } from "@phasereditor2d/scripts-core";
-import { PushActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { FadeActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { DurationConfigComp } from "@phasereditor2d/scripts-simple-animations";
-import { MoveInSceneActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { DelayConfigComp } from "@phasereditor2d/scripts-simple-animations";
+import { OnPointerDownScript } from "@phaserjs/editor-scripts-core";
+import { PushActionScript } from "@phaserjs/editor-scripts-simple-animations";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
+import { FadeActionScript } from "@phaserjs/editor-scripts-simple-animations";
+import { DurationConfigComp } from "@phaserjs/editor-scripts-simple-animations";
+import { MoveInSceneActionScript } from "@phaserjs/editor-scripts-simple-animations";
+import { DelayConfigComp } from "@phaserjs/editor-scripts-simple-animations";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 

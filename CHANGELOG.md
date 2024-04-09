@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.0 - Apr 9, 2024
+
+* Migrates to Phaser Editor v4.
+
 ## v1.3.1 - Jan 14, 2024
 
 * Updates script libraries.
