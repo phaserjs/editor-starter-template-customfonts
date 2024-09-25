@@ -3,7 +3,6 @@
 
 /* START OF COMPILED CODE */
 
-import PreloadBarUpdaterScript from "../script-nodes/PreloadBarUpdaterScript";
 /* START-USER-IMPORTS */
 import assetPackUrl from "../../static/assets/asset-pack.json";
 import { WebFontFile } from "../fileloaders/WebFontFile";
@@ -32,9 +31,6 @@ export default class Preload extends Phaser.Scene {
 		progressBar.isFilled = true;
 		progressBar.fillColor = 14737632;
 
-		// preloadUpdater
-		new PreloadBarUpdaterScript(progressBar);
-
 		// progressBarBg
 		const progressBarBg = this.add.rectangle(553.0120849609375, 361, 256, 20);
 		progressBarBg.setOrigin(0, 0);
@@ -46,8 +42,12 @@ export default class Preload extends Phaser.Scene {
 		loadingText.text = "Loading...";
 		loadingText.setStyle({ "color": "#e0e0e0", "fontFamily": "arial", "fontSize": "20px" });
 
+		this.progressBarBg = progressBarBg;
+
 		this.events.emit("scene-awake");
 	}
+
+	private progressBarBg!: Phaser.GameObjects.Rectangle;
 
 	/* START-USER-CODE */
 
@@ -72,6 +72,13 @@ export default class Preload extends Phaser.Scene {
 		this.load.webfont("caroni");
 
 		this.load.pack("asset-pack", assetPackUrl);
+
+		const width = this.progressBarBg.width;
+
+		this.load.on("progress", (p: number) => {
+
+			this.progressBarBg.width = width * p;
+		});
 	}
 
 	create() {
