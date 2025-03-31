@@ -15,7 +15,7 @@
   "dependencies": {
     "@phaserjs/editor-scripts-base": "^1.0.0",
     "@phaserjs/editor-scripts-quick": "^1.0.0",
-    "phaser": "^3.60.0",
+    "phaser": "^3.88.2",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
